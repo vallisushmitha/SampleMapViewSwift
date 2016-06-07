@@ -14,6 +14,7 @@
 		37EFF5361CDB627D00F973E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37EFF5341CDB627D00F973E7 /* LaunchScreen.storyboard */; };
 		37EFF5411CDB627D00F973E7 /* SampleMapViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EFF5401CDB627D00F973E7 /* SampleMapViewTests.swift */; };
 		37EFF54C1CDB627D00F973E7 /* SampleMapViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EFF54B1CDB627D00F973E7 /* SampleMapViewUITests.swift */; };
+		37EFF55A1CDB62DF00F973E7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37EFF5591CDB62DF00F973E7 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		37EFF5471CDB627D00F973E7 /* SampleMapViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleMapViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37EFF54B1CDB627D00F973E7 /* SampleMapViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleMapViewUITests.swift; sourceTree = "<group>"; };
 		37EFF54D1CDB627D00F973E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37EFF5591CDB62DF00F973E7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37EFF55A1CDB62DF00F973E7 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 		37EFF51F1CDB627D00F973E7 = {
 			isa = PBXGroup;
 			children = (
+				37EFF5591CDB62DF00F973E7 /* MapKit.framework */,
 				37EFF52A1CDB627D00F973E7 /* SampleMapView */,
 				37EFF53F1CDB627D00F973E7 /* SampleMapViewTests */,
 				37EFF54A1CDB627D00F973E7 /* SampleMapViewUITests */,
@@ -193,7 +197,6 @@
 				TargetAttributes = {
 					37EFF5271CDB627D00F973E7 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = JYBV57ZJUU;
 					};
 					37EFF53B1CDB627D00F973E7 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -404,7 +407,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SampleMapView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kvana.SampleMapView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -415,7 +420,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = SampleMapView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kvana.SampleMapView;
 				PRODUCT_NAME = "$(TARGET_NAME)";

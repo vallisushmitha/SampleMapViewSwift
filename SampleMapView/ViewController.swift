@@ -7,12 +7,42 @@
 //
 
 import UIKit
+import MapKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, MKMapViewDelegate {
 
+    @IBOutlet weak var mapview: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+       
+        var latitude:CLLocationDegrees = 	17.4411
+        var longitude:CLLocationDegrees =  78.3911
+        
+//        for zooming
+        var latdelta:CLLocationDegrees = 0.01
+        var longdelta:CLLocationDegrees = 0.01
+        
+        var thespan:MKCoordinateSpan = MKCoordinateSpanMake(latdelta, longdelta)
+        
+        
+        var madhapurLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
+        
+        var theRegion:MKCoordinateRegion = MKCoordinateRegionMake(madhapurLocation, thespan)
+        
+        
+        self.mapview.setRegion(theRegion, animated: true)
+        
+        var birdofparadiseAnnotion = MKPointAnnotation()
+        
+        birdofparadiseAnnotion.coordinate = madhapurLocation
+        
+        birdofparadiseAnnotion.title = "Kvana Group"
+        birdofparadiseAnnotion.subtitle = "Bird of Pradise"
+        
+        self.mapview.addAnnotation(birdofparadiseAnnotion)
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
