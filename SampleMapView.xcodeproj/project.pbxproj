@@ -15,6 +15,7 @@
 		37EFF5411CDB627D00F973E7 /* SampleMapViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EFF5401CDB627D00F973E7 /* SampleMapViewTests.swift */; };
 		37EFF54C1CDB627D00F973E7 /* SampleMapViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EFF54B1CDB627D00F973E7 /* SampleMapViewUITests.swift */; };
 		37EFF55A1CDB62DF00F973E7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37EFF5591CDB62DF00F973E7 /* MapKit.framework */; };
+		D92E64EF1E8A877C00E193A0 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92E64EE1E8A877C00E193A0 /* Util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		37EFF54B1CDB627D00F973E7 /* SampleMapViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleMapViewUITests.swift; sourceTree = "<group>"; };
 		37EFF54D1CDB627D00F973E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37EFF5591CDB62DF00F973E7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D92E64EE1E8A877C00E193A0 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 		37EFF53F1CDB627D00F973E7 /* SampleMapViewTests */ = {
 			isa = PBXGroup;
 			children = (
+				D92E64EE1E8A877C00E193A0 /* Util.swift */,
 				37EFF5401CDB627D00F973E7 /* SampleMapViewTests.swift */,
 				37EFF5421CDB627D00F973E7 /* Info.plist */,
 			);
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37EFF5411CDB627D00F973E7 /* SampleMapViewTests.swift in Sources */,
+				D92E64EF1E8A877C00E193A0 /* Util.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +498,7 @@
 				37EFF5521CDB627D00F973E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		37EFF5531CDB627D00F973E7 /* Build configuration list for PBXNativeTarget "SampleMapViewTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +507,7 @@
 				37EFF5551CDB627D00F973E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		37EFF5561CDB627D00F973E7 /* Build configuration list for PBXNativeTarget "SampleMapViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +516,7 @@
 				37EFF5581CDB627D00F973E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
