@@ -15,24 +15,24 @@ class ViewController: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        var latitude:CLLocationDegrees = 	17.4411
-        var longitude:CLLocationDegrees =  78.3911
+        let latitude:CLLocationDegrees = 	17.4411
+        let longitude:CLLocationDegrees =  78.3911
         
 //        for zooming
-        var latdelta:CLLocationDegrees = 0.01
-        var longdelta:CLLocationDegrees = 0.01
+        let latdelta:CLLocationDegrees = 0.01
+        let longdelta:CLLocationDegrees = 0.01
         
-        var thespan:MKCoordinateSpan = MKCoordinateSpanMake(latdelta, longdelta)
+        let thespan:MKCoordinateSpan = MKCoordinateSpanMake(latdelta, longdelta)
         
         
-        var madhapurLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
+        let madhapurLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
         
-        var theRegion:MKCoordinateRegion = MKCoordinateRegionMake(madhapurLocation, thespan)
+        let theRegion:MKCoordinateRegion = MKCoordinateRegionMake(madhapurLocation, thespan)
         
         
         self.mapview.setRegion(theRegion, animated: true)
         
-        var birdofparadiseAnnotion = MKPointAnnotation()
+        let birdofparadiseAnnotion = MKPointAnnotation()
         
         birdofparadiseAnnotion.coordinate = madhapurLocation
         

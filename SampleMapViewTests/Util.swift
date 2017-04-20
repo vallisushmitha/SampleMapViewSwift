@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Ravi Shankar. All rights reserved.
 //
 
-open class Util {
+class Util {
     
     func isPrime(_ number:Int) -> Bool {
         
